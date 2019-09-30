@@ -1,0 +1,11 @@
+DROP TABLE Tickets;
+
+CREATE TABLE Tickets
+(
+	TicketId INT NOT NULL GENERATED ALWAYS AS IDENTITY,
+	Destination VARCHAR (50) NOT NULL,
+	DepartureTime VARCHAR (50) NOT NULL,
+	ArrivalTime VARCHAR (254) NOT NULL,
+	TicketNumber VARCHAR (15) NOT NULL,
+	SeatNumber INT NOT NULL
+);
